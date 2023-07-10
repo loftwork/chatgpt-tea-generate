@@ -9,8 +9,8 @@
 必要に応じてインストールを実施してください。
 
 ```
-・Node.js
-・Yarn
+・ Node.js
+・ Yarn
 ```
 また、ChatGPTのAPIを使用するためにOpenAIに登録し、API KEYを発行する必要があります。
 API KEYが漏洩してしまうと第3者からAPIを使用されてしまい、高額な料金が発生してしまう可能性がありますので取り扱いには注意してください。
@@ -21,7 +21,7 @@ API KEYが漏洩してしまうと第3者からAPIを使用されてしまい、
 ターミナルを立ち上げ、プロジェクトを作成します。
 chatgpt-tea-ganerateの部分は自由に決めて頂いて構いません。
 ```
-$ yarn create next-app chatgpt-tea-ganerate
+yarn create next-app chatgpt-tea-ganerate
 ```
 色々と選択肢が出てきますので下記のように設定します。
 ```
@@ -46,29 +46,31 @@ Publicディレクトリ内に、GitHubのimagesディレクトリを移動し�
 ```
 OPENAI_API_KEY="YOUR OPENAI API KEY"
 ```
+
 ### ⑤ プロジェクトフォルダへ移動
 先程作成したプロジェクトに移動します。
 例でいうとchatgpt-tea-ganerateフォルダを作成していますので、
 下記のコマンドを入力して移動します。
 ```
-$ cd chatgpt-tea-ganerate
+cd chatgpt-tea-ganerate
 ```
 
 ### ⑥ Chakra UIのインストール
 下記のコマンドを実行してChakra UIをインストールします。
 ```
-$ yarn add @chakra-ui/react @emotion/react @emotion/styled framer-motion
+yarn add @chakra-ui/react @emotion/react @emotion/styled framer-motion
 ```
 
 ### ⑦ OpenAIモジュールのインストール
 下記のコマンドを実行してOpenAIモジュールをインストールします。
 ```
-$ yarn add openai
+yarn add openai
 ```
+
 ### ⑧ プログラムの実行
 下記コマンドで実行します。
 ```
-$ yarn dev
+yarn dev
 ```
 メッセージに表示されたURLである、http://localhost:3000/ にアクセスするとページが表示されます。
 
